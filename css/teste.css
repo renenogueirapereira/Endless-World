@@ -29,9 +29,9 @@ header {
   width: 100vw;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 30px;
+  height: 10%;
   padding: 1rem 22rem;
 }
 header nav{
@@ -323,7 +323,7 @@ footer {
     height: 63px;
   }
   nav{
-    width: 400px;
+    left: 400px;
   }
   nav a{
     font-size: 11px;

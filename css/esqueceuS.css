@@ -317,7 +317,7 @@ height: 15%;
 .or{
     color: white;
 }
-@media (max-width: 414px){
+@media (max-width: 768px){
   .td{
     width: 100%;
     height: 100%;

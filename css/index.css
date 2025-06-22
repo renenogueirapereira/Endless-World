@@ -14,7 +14,6 @@
     align-items: center;
 
 }
-
 .right{
     width: 30vw;
     height: 100vh;
@@ -59,7 +58,7 @@
         background-size: cover; 
         background-position: 10%; 
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     .slide2 {
      width: 70vw;
@@ -67,7 +66,7 @@
         background-image: url(../img/casa_floresta.jpg);
          background-size: cover;
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     .slide3 {
      width: 70vw;
@@ -76,7 +75,7 @@
         background-size: cover;
         background-position: 5%; 
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     @keyframes slide {
@@ -101,7 +100,7 @@
 svg{
     width: 900px;
     height: 900px;
-     position: fixed;
+     position: absolute;
      right: -250px ;
   top: -450px;
   transform: rotate(40DEG);
@@ -328,7 +327,7 @@ height: 15%;
 }
 
  /* responsividade*/
-@media (max-width: 414px){
+@media (max-width: 768px){
   .td{
     width: 100%;
     height: 100%;
@@ -408,9 +407,8 @@ height: 15%;
 .faz{
   width: 100%;
   padding-top: 0.5rem;
-}
-
-  .imgface{
+} 
+ .imgface{
     width: 40px;
     height: 40px;
   }
@@ -422,5 +420,6 @@ height: 15%;
     width: 40px;
     height: 40px;
   }
+
 }
   
