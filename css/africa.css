@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input{
+  border: none;
+  width: 150px;
+  height: 24px;
+  border-bottom:solid #4f59f1 ;
+  border-radius: 2px;
+}
+input:focus{
+  border: none;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+   overflow-x: hidden;
+}
+.logo a{
+   font-style: none;
+   text-decoration: none;
+   color: white;
+}
+header {
+  position: fixed;
+  z-index: 5;
+  background: #06247a;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 22rem;
+}
+header nav{
+  margin-right: 30px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 15px ;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+}
+.tooltip a{
+  height: 20px;
+}
+.menu-item .tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #06247a;
+  color: white;
+  padding: 10px;
+  width: 160px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #4f59f1;
+  z-index: 100;
+  white-space: normal;
+}
+
+.menu-item:hover .tooltip {
+ display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+}
+.hero {
+  position: relative;
+  height: 800px;
+
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero h1 {
+  position: absolute;
+  bottom: 1%;
+  left: 800px;
+  color: white;
+  font-size: 60px;
+  filter: opacity(0,5);
+  filter: blur(0.5);
+  padding: 0.5rem 1rem;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+.experiencias {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.conteudo {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 2;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+}
+
+.planejador {
+  flex: 1;
+  background: rgb(240, 247, 252);
+  border-radius: 8px;
+  height: fit-content;  
+  position: sticky;
+  top: 90px;
+  right: 1rem;
+  padding: 1rem;
+}
+
+.planejador form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.config{
+  width: 100%;
+  height: 80%;
+}
+.planejador button {
+  background: #4f59f1;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.planejador button:hover {
+  background-color: white;
+  color: #5C75FF;
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0.1px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 0.1px #5C75FF, 0 0 0.1px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 0.1px #5C75FF;
+  }
+}
+
+.chamada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40vh;
+}
+
+.chamada img {
+  width: 100% ;
+  height:40vh;
+  position: absolute;
+  z-index: 1;
+  filter: blur(3px);
+}
+.texto{
+  position: absolute;
+  z-index: 2;
+  left: 100px;
+  color: white;
+}
+.texto a{
+  padding: 5px 30px;
+  font-style: none;
+  text-decoration: none;
+  background-color: #4f59f1;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+}
+.texto a:hover{
+ background-color: white;
+  color: #5C75FF;
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+}
+.chamada .texto {
+  max-width: 45%;
+}
+
+.chamada button {
+  margin-top: 1rem;
+  background: #4f59f1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.chamada button:hover {
+  background-color: white;
+  color: #5C75FF;
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+}
+.chamada button:not(:hover){
+  transition: 1s;
+}
+.faq {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  background: #06247a;
+  color: white;
+  padding: 1rem;
+}
+
+
+.menu-item:hover .tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #06247a;
+  color: white;
+  padding: 10px;
+  width: 160px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #4f59f1;
+  z-index: 100;
+  white-space: normal;
+}
+.X a{
+font-style: none;
+text-decoration: none;
+color: white;
+font-size: 15px;
+
+}
+.X a:hover{
+ background-color: white;
+  color: #5C75FF;
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0.1px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 0.1px #5C75FF, 0 0 0.1px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 0.1px #5C75FF;
+  }
+}
+.X a:not(:hover){
+  transition: 1s;
+}
+@media (max-width: 768px) {
+  /* HEADER */
+  .config a{
+  text-decoration: none;
+  font-style: none;
+  color: white;
+  }
+  header{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    height: 60px;
+  }
+  nav a{
+    font-size: 11px;
+    border-bottom: solid white 1px;
+  }
+  nav{
+    position: absolute;
+    right: 15px;
+  }
+   .logo{
+   width: 200px;
+   position: absolute;
+   left: 15px;
+  }
+
+ /* 
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  nav a {
+    font-size: 0.95rem;
+    margin-left: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+HEADER */
+
+  .menu-item .tooltip {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu-item:hover .tooltip {
+    display: flex;
+  }
+
+  /* HERO */
+  .hero {
+    height: 400px;
+    margin-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    text-align: center;
+  }
+
+  /* EXPERIÊNCIAS */
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .planejador {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* CHAMADA 
+  .chamada {
+    display: flex;
+    align-items: baseline;
+    justify-content: center ;
+    flex-direction: row;
+    height:300px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .chamada img {
+    position:absolute;
+    top: 0; 
+    z-index: 1 ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+  } 
+  .texto {
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    color: white;
+    width: 70%;
+    height:30%;
+    text-align: center;
+    gap: 1%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+  }
+
+  .texto a {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .chamada .texto {
+    max-width: 100%;
+  }
+
+  /* FAQ */
+  .faq {
+    height: 230px;
+  padding: 1rem;
+  display: block;
+  position: static;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+  /* FOOTER */
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    position: absolute;
+    z-index: 4  ;
+    width: 100%;
+    bottom: -3990px;
+  }
+
+  /* INPUTS */
+  input {
+    width: 100%;
+  }
+
+  .config {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+
+  
+.menu-item:hover .tooltip {
+ display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+}
+}

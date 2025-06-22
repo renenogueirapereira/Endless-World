@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+.logo a{
+   font-style: none;
+   text-decoration: none;
+   color: white;
+}
+header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background: #06247a;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 22rem;
+}
+header nav{
+  margin-right: 30px;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  font-style: none;
+}
+.menu-item {
+  position: relative;
+}
+.tooltip a{
+  height: 20px;
+}
+.menu-item .tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #06247a;
+  color: white;
+  padding: 10px;
+  width: 160px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #4f59f1;
+  z-index: 100;
+  white-space: normal;
+}
+
+.menu-item:hover .tooltip {
+ display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+  margin-top: 50px;
+}
+.caixa-confirmacao {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.icone-sucesso {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.caixa-confirmacao h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.caixa-confirmacao p {
+  margin-bottom: 1rem;
+}
+
+.form-reenvio {
+  margin-top: 1rem;
+}
+
+.form-reenvio input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-reenvio button {
+  background-color: #4f59f1;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form-reenvio button:hover{
+  background-color: white;
+  a{
+    color: #5C75FF;
+  }
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+}
+.form-reenvio button:not(:hover){
+  transition: 1s;
+}
+button a{
+  color: white;
+}
+.voltar {
+  position: sticky;
+  bottom: 20px;
+   border-radius: 10px;
+  padding: 0.3rem 0.9rem;
+  text-decoration: none;
+  color: #4f59f1;
+
+}
+@media (max-width: 768px) {
+   header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 63px;
+  }
+  nav{
+    width: 400px;
+    position: absolute;
+    left: 400px;
+  }
+  nav a{
+    font-size: 11px;
+        border-bottom: white solid 1px;
+  }
+  .logo{
+   width: 200px;
+   position: absolute;
+   left: 15px;
+  }
+}

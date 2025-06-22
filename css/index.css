@@ -1,0 +1,426 @@
+ /*config*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.td{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2e5d8c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.right{
+    width: 30vw;
+    height: 100vh;
+    background-color:#3C7BB9;
+    z-index: 2;
+}
+/*esquerda*/
+.carousel {
+      width: 70vw;
+      height: 100vh;
+      overflow: hidden;
+      border-radius: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .carousel-inner {
+      display: flex;
+      width: 300%; /* 3 slides */
+      height: 100%;
+      animation: slide 20s infinite;
+      position: relative;
+        z-index: 2;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      position: relative;
+        z-index: 2;
+    }
+
+    .slide1 {
+      width: 70vw;
+      height: 100vh; 
+       background-image: url(../img/cit.jpg);
+        background-size: cover; 
+        background-position: 10%; 
+        position: relative;
+        z-index: 2;
+    }
+    .slide2 {
+     width: 70vw;
+      height: 100vh; 
+        background-image: url(../img/casa_floresta.jpg);
+         background-size: cover;
+        position: relative;
+        z-index: 2;
+    }
+    .slide3 {
+     width: 70vw;
+      height: 100vh; 
+        background-image: url(../img/floresta.jpg);
+        background-size: cover;
+        background-position: 5%; 
+        position: relative;
+        z-index: 2;
+    }
+
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      33.33% { transform: translateX(-33.5%); }
+      66.66% { transform: translateX(-66.5%); }
+      100%  { transform: translateX(0%); }
+    }
+    .carousel:hover .carousel-inner:hover {
+  animation-play-state: paused;
+  transition: 3s;
+}
+/*direita*/
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+     position: relative;
+  z-index: 2;
+}
+svg{
+    width: 900px;
+    height: 900px;
+     position: fixed;
+     right: -250px ;
+  top: -450px;
+  transform: rotate(40DEG);
+  margin-right: 0;
+  z-index: 1;
+}
+.logo{
+    width: 60%;
+    height: 20%;
+    position: relative;
+    z-index: 2;
+}
+.card{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.email{
+    width: 80%;
+    height: 20px;
+    border: none;
+    border-bottom:solid white 2px;
+    color: white;
+    background-color: transparent;
+     position: relative;
+  z-index: 2;
+}
+.senha{
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom:solid white 2px;
+    color: white;
+    background-color: transparent;
+     position: relative;
+  z-index: 2;
+}
+.config3{
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+
+}
+.config3 a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+.config3 a {
+  color: #b2d8fc;
+  transition: 1s;
+
+}
+.sqc{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+     font-size: 13px;
+       position: relative;
+  z-index: 2;
+}
+.sqc:hover{
+    color: #b2d8fc;
+    transition: 1s;
+}
+.sqc:not(:hover){
+    transition: 0.4s;
+}
+input::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: white solid 2px;
+}
+.config2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    flex-direction: column;
+}
+.config{
+     width: 100%;
+    height: 12%;
+    display: flex;
+  flex-direction: column;
+ justify-content: flex-end; 
+    align-items: flex-end;
+    padding-right: 9%;
+}
+.entra{
+    width: 60%;
+    height: 50%;
+    border: none;
+    text-decoration: none;
+    font-style: none;
+    background-color: white;
+    border-radius: 20px;
+    color: #2e5d8c;
+    text-align: center ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+      position: relative;
+  z-index: 2;
+}
+.entra:hover{
+    background-color:#2e5d8c;
+    color: white;
+    transition: 1s; 
+     position: relative;
+  z-index: 2;
+}
+.entra:not(:hover){
+    transition: 0.5s;
+      position: relative;
+  z-index: 2;
+}
+.entra a{
+    text-decoration: none;
+    font-style: none;
+    color: #2e5d8c;
+      position: relative;
+  z-index: 2;
+}
+.faz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 7%;
+      position: relative;
+  z-index: 2;
+}
+.faz a{
+    font-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.faz a:hover{
+  color: #b2d8fc;
+  transition: 1s;
+}
+.faz.sqc:not(:hover){
+    transition: 0.5s;
+}
+.config1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+hr{
+    width: 35%;
+    height: 1%
+  
+}
+.imgs{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 10%;
+gap: 8%;
+width: 100%;
+height: 15%;
+}
+.imgface{
+     background-color: white;
+     background-image: url(../img/FACEBOOK.png);
+   background-size: cover;
+   background-position: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.imggogle{
+     background-color: white;
+  background-image: url(../img/google.png);
+   background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.imglink{
+    background-color: white;
+  background-image: url(../img/LINKEDIN.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.World{
+    width: 400px;
+    height: 400px;
+    filter: opacity(0.2);
+    position: fixed;
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(-30deg);
+}
+.or{
+    color: white;
+}
+
+ /* responsividade*/
+@media (max-width: 414px){
+  .td{
+    width: 100%;
+    height: 100%;
+  }
+  .carousel{
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes slide {
+      0%    { transform: translateX(0); }
+      25% { transform: translateX(-66.5%); }
+      50% { transform: translateX(-133%); }
+      75%  { transform: translateX(-266%); }
+      100%{transform: translateX(0%);}
+    }
+  .slide1{
+    width: 100%;
+  }
+  .slide2{
+    width: 100%;
+  }
+  .slide3{
+    width: 100%;
+  }
+  svg,.World{
+    display: none;
+  }
+  .right{
+    width: 70%;
+    height: 75%;
+    position: fixed;
+    top: 10%;
+    right: 13%;
+    border-radius: 20px;
+    background: #06257a8f;
+  }
+  .card{
+    width: 100%;
+  }
+.email{
+    width: 80%;
+    height: 20px;
+    border: none;
+    border-bottom:solid white 2px;
+    color: white;
+    background-color: transparent;
+     position: relative;
+  z-index: 2;
+}
+.config3{
+  width: 80%;
+  display: flex;
+  align-items: end;
+}
+.senha{
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom:solid white 2px;
+    color: white;
+    background-color: transparent;
+     position: relative;
+  z-index: 2;
+}
+.config2{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-direction: column;
+}
+.entra{
+  width: 150px;
+}
+.faz{
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+  .imgface{
+    width: 40px;
+    height: 40px;
+  }
+  .imggogle{
+    width: 40px;
+    height: 40px;
+  }
+  .imglink{
+    width: 40px;
+    height: 40px;
+  }
+}
+  
