@@ -4,6 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -59,6 +60,8 @@ nav a {
   text-decoration: none;
 }
 nav {
+  position: static;
+  left: 15px;
   display: flex;
   gap: 2px;
   align-items: center;
@@ -91,6 +94,7 @@ nav {
   align-items: baseline;
   justify-content: left;
   flex-direction: column;
+    cursor: pointer;
 }
 .menu-item {
   position: relative;
@@ -100,6 +104,7 @@ nav {
   align-items: baseline;
   justify-content: left;
   flex-direction: column;
+    cursor: pointer;
 }
 .header-container {
   display: flex;
@@ -238,7 +243,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 40vh   ;
+  height: 40vh;
 }
 
 .chamada img {
@@ -263,6 +268,7 @@ footer {
   border-radius: 10px;
   color: white;
   font-size: 13px;
+    cursor: pointer;
 }
 .texto a:hover{
  background-color: white;
@@ -282,16 +288,12 @@ footer {
     box-shadow: 0 0 5px #5C75FF;
   }
 }
-.chamada .texto {
-  max-width: 45%;
-}
 
 .chamada button {
   margin-top: 1rem;
   background: #4f59f1;
   color: white;
   padding: 0.5rem 1rem;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -479,23 +481,33 @@ button[type="submit"]:not(:hover){
   align-items: center;
   justify-content: center;
 }
+
 @media (max-width: 768px) {
+  body{
+    height: 800px;
+  }
+  *{
+    font-size: 15px;
+  }
+  .pfv{
+    height: 400px;
+  }
   .imagem-principal{
-    width: 433px;
+    width: 245px;
   }
   .form-card{
    position: static ;
    z-index: 0;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.08);
   }
-  .chamada{
-    position: static;
-  }
+  
   .card{
      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   .relacionados{
     width: 100%;
+    position: relative;
+    top: 0;
   }
   .card{
     width: 30%;
@@ -507,29 +519,34 @@ button[type="submit"]:not(:hover){
   footer{
     width: 100%;
   }
+.chamada{
+  height: 100px;
+}
+  
 
-  header{
+ header{
     padding: 1rem 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    height: 63px;
   }
   nav{
-    width: 400px;
-    position: absolute;
     left: 400px;
+
   }
   nav a{
-    font-size: 11px;
+    font-size: 10px;
         border-bottom: white solid 1px;
   }
   .logo{
    width: 200px;
-   position: absolute;
-   left: 15px;
+   font-size: 20px;
   }
+
+
 
   .nav-links {
     display: flex;

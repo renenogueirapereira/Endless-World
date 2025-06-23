@@ -326,12 +326,12 @@ footer {
     left: 400px;
   }
   nav a{
-    font-size: 11px;
+    font-size: 10px;
         border-bottom: white solid 1px;
   }
   .logo{
    width: 200px;
-
+   font-size: 20px;
   }
   .nav-links {
     display: flex;

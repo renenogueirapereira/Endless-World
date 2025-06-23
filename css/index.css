@@ -56,7 +56,7 @@
     .slide1 {
       width: 70vw;
       height: 100vh; 
-       background-image: url(../cit.jpg);
+       background-image: url(../src/img/cit.jpg);
         background-size: cover; 
         background-position: 10%; 
         position: relative;
@@ -65,7 +65,7 @@
     .slide2 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../casa_floresta.jpg);
+        background-image: url(../src/img/casa_floresta.jpg);
          background-size: cover;
         position: relative;
         z-index: 3;
@@ -73,7 +73,7 @@
     .slide3 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../floresta.jpg);
+        background-image: url(../src/img/floresta.jpg);
         background-size: cover;
         background-position: 5%; 
         position: relative;
@@ -286,7 +286,7 @@ height: 15%;
 }
 .imgface{
      background-color: white;
-     background-image: url(../FACEBOOK.png);
+     background-image: url(../src/img/FACEBOOK.png);
    background-size: cover;
    background-position: center;
   width: 50px;
@@ -297,7 +297,7 @@ height: 15%;
 }
 .imggogle{
      background-color: white;
-  background-image: url(../google.png);
+  background-image: url(../src/img/google.png);
    background-size: cover;
   width: 50px;
   height: 50px;
@@ -307,7 +307,7 @@ height: 15%;
 }
 .imglink{
     background-color: white;
-  background-image: url(../LINKEDIN.png);
+  background-image: url(../src/img/LINKEDIN.png);
   background-size: cover;
   width: 50px;
   height: 50px;
