@@ -321,16 +321,47 @@ font-size: 15px;
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 0.1px #5C75FF;
+    box-shadow: 0 0 5px #5C75FF;
   }
   50% {
-    box-shadow: 0 0 0.1px #5C75FF, 0 0 0.1px #475BCB;
+    box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
   }
   100% {
-    box-shadow: 0 0 0.1px #5C75FF;
+    box-shadow: 0 0 5px #5C75FF;
   }
 }
 .X a:not(:hover){
+  transition: 1s;
+}
+form a{
+  width: 80%;
+  height: 30px;
+  background-color:#5C75FF;
+  font-style: NONE;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+form a:hover{
+ background-color: white;
+  color: #5C75FF;
+  border: 1px solid #5C75FF;
+  border-radius: 10px;
+  animation: glow 3s infinite ease-in-out;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+  50% {
+    box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
+  }
+  100% {
+    box-shadow: 0 0 5px #5C75FF;
+  }
+}
+form a:not(:hover){
   transition: 1s;
 }
 @media (max-width: 768px) {

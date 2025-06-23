@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .td{
     width: 100vw;
@@ -54,7 +56,7 @@
     .slide1 {
       width: 70vw;
       height: 100vh; 
-       background-image: url(../img/cit.jpg);
+       background-image: url(../cit.jpg);
         background-size: cover; 
         background-position: 10%; 
         position: relative;
@@ -63,7 +65,7 @@
     .slide2 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../img/casa_floresta.jpg);
+        background-image: url(../casa_floresta.jpg);
          background-size: cover;
         position: relative;
         z-index: 3;
@@ -71,7 +73,7 @@
     .slide3 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../img/floresta.jpg);
+        background-image: url(../floresta.jpg);
         background-size: cover;
         background-position: 5%; 
         position: relative;
@@ -187,20 +189,12 @@ input:focus {
   border: none;
   border-bottom: white solid 2px;
 }
-.config2{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    flex-direction: column;
-}
 .config{
-     width: 100%;
-    height: 12%;
-    display: flex;
+  width: 100%;
+  height: 12%;
+  display: flex;
   flex-direction: column;
- justify-content: flex-end; 
+  justify-content: flex-end; 
     align-items: flex-end;
     padding-right: 9%;
 }
@@ -215,8 +209,8 @@ input:focus {
     color: #2e5d8c;
     text-align: center ;
      display: flex;
-    justify-content: center;
-    align-items: center;
+     justify-content: center;
+     align-items: center;
       position: relative;
   z-index: 2;
 }
@@ -233,18 +227,26 @@ input:focus {
   z-index: 2;
 }
 .entra a{
-    text-decoration: none;
-    font-style: none;
-    color: #2e5d8c;
-      position: relative;
+  text-decoration: none;
+  font-style: none;
+  color: #2e5d8c;
+  position: relative;
   z-index: 2;
+}
+.config2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    flex-direction: column;
 }
 .faz{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: 7%;
+    height:20%;
       position: relative;
   z-index: 2;
 }
@@ -284,7 +286,7 @@ height: 15%;
 }
 .imgface{
      background-color: white;
-     background-image: url(../img/FACEBOOK.png);
+     background-image: url(../FACEBOOK.png);
    background-size: cover;
    background-position: center;
   width: 50px;
@@ -295,7 +297,7 @@ height: 15%;
 }
 .imggogle{
      background-color: white;
-  background-image: url(../img/google.png);
+  background-image: url(../google.png);
    background-size: cover;
   width: 50px;
   height: 50px;
@@ -305,7 +307,7 @@ height: 15%;
 }
 .imglink{
     background-color: white;
-  background-image: url(../img/LINKEDIN.png);
+  background-image: url(../LINKEDIN.png);
   background-size: cover;
   width: 50px;
   height: 50px;

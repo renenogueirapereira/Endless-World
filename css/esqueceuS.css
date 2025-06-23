@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 .td{
     width: 100vw;
@@ -55,28 +56,28 @@
     .slide1 {
       width: 70vw;
       height: 100vh; 
-       background-image: url(../img/deserto.jpg);
+       background-image: url(../deserto.jpg);
         background-size: cover; 
         background-position: 10%; 
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     .slide2 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../img/morros.jpg);
+        background-image: url(../morros.jpg);
          background-size: cover;
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     .slide3 {
      width: 70vw;
       height: 100vh; 
-        background-image: url(../img/lagoa\ azul.jpg);
+        background-image: url(../lagoa\ azul.jpg);
         background-size: cover;
         background-position: 5%; 
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     @keyframes slide {
@@ -101,7 +102,7 @@
 svg{
     width: 900px;
     height: 900px;
-     position: fixed;
+     position: absolute;
      right: -250px ;
   top: -450px;
   transform: rotate(40DEG);
@@ -128,7 +129,7 @@ svg{
     border: none;
     border-bottom:solid white 2px;
     color: white;
-    background-color: #3C7BB9;
+    background-color: transparent;
      position: relative;
   z-index: 2;
 }
@@ -236,7 +237,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: 7%;
+    height: 20%;
       position: relative;
   z-index: 2;
 }
@@ -276,7 +277,7 @@ height: 15%;
 }
 .imgface{
      background-color: white;
-     background-image: url(../img/FACEBOOK.png);
+     background-image: url(../FACEBOOK.png);
    background-size: cover;
    background-position: center;
   width: 50px;
@@ -287,7 +288,7 @@ height: 15%;
 }
 .imggogle{
      background-color: white;
-  background-image: url(../img/google.png);
+  background-image: url(../google.png);
    background-size: cover;
   width: 50px;
   height: 50px;
@@ -297,7 +298,7 @@ height: 15%;
 }
 .imglink{
     background-color: white;
-  background-image: url(../img/LINKEDIN.png);
+  background-image: url(../LINKEDIN.png);
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -375,7 +376,7 @@ height: 15%;
     border: none;
     border-bottom:solid rgb(255, 255, 255) 2px;
     color: white;
-    background-color: transparent;
+    background: transparent;
      position: relative;
   z-index: 2;
 }

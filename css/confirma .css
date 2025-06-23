@@ -141,6 +141,13 @@ a{
   border-radius: 10px;
   animation: glow 3s infinite ease-in-out;
 }
+footer {
+  background: #06247a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px #5C75FF;
@@ -168,6 +175,9 @@ button a{
 
 }
 @media (max-width: 768px) {
+    footer{
+    width: 100%;
+  }
    header{
     width: 100%;
     display: flex;
