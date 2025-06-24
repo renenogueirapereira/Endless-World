@@ -332,9 +332,8 @@ height: 15%;
   }
   @keyframes slide {    
       0%    { transform: translateX(0); }
-      25% { transform: translateX(-66.5%); }
-      50% { transform: translateX(-133%); }
-      75%  { transform: translateX(-266%); }
+      25% { transform: translateX(-33.5%); }
+      50% { transform: translateX(-66.5%); }
       100%{transform: translateX(0%);}
     }
   .slide1{
