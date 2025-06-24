@@ -16,26 +16,17 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-.logo a{
-   font-style: none;
-   text-decoration: none;
-   color: white;
-}
 header {
   position: fixed;
   z-index: 5;
   top: 0;
   background: #06247a;
-  width: 100vw;
+  width: 100%;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 10%;
-  padding: 1rem 22rem;
-}
-header nav{
-  margin-right: 30px;
 }
 nav a {
   color: white;
@@ -57,7 +48,7 @@ nav {
 .menu-item .tooltip {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 0;
   background-color: #06247a;
   color: white;
@@ -85,6 +76,17 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+}
+.logo a{
+   font-style: none;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   width: 100%;
+   height: 100%;
 }
 
 .nav-links {
@@ -311,8 +313,23 @@ footer {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
-
+.slideshow-container {
+  will-change: transform;
+}
 @media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+  }
+  
+  .thumbnails {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  .thumb {
+    width: 23%;
+    margin: 0 1%;
+  }
   header{
     padding: 1rem 0;
     width: 100%;
@@ -332,6 +349,10 @@ footer {
   .logo{
    width: 200px;
    font-size: 20px;
+   margin-left: 8px;
+  }
+  .logo a {
+    font-size: 20px;
   }
   .nav-links {
     display: flex;

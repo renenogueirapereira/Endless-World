@@ -3,45 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-input{
+
+input {
   border: none;
   width: 150px;
   height: 24px;
-  border-bottom:solid #4f59f1 ;
+  border-bottom: solid #4f59f1;
   border-radius: 2px;
 }
-input:focus{
+
+input:focus {
   border: none;
 }
+
 body {
   font-family: sans-serif;
   line-height: 1.6;
   color: #333;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
-.logo a{
-   font-style: none;
-   text-decoration: none;
-   color: white;
-}
+
+
 header {
   position: fixed;
   z-index: 5;
+  top: 0;
   background: #06247a;
   width: 100%;
+  height: 10%;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem 22rem;
 }
-header nav{
-  margin-right: 30px;
+.logo a {
+  font-style: none;
+   text-decoration: none;
+   color: white;  
+   width: 100%;
+   height: 100%;
 }
 .logo {
-  font-weight: bold;
+ font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 15px ;
+  background-color: transparent;
+  height: auto;
+  width: auto;
 }
 
 nav a {
@@ -49,6 +56,7 @@ nav a {
   margin-left: 1rem;
   text-decoration: none;
 }
+
 nav {
   display: flex;
   gap: 2px;
@@ -58,9 +66,11 @@ nav {
 .menu-item {
   position: relative;
 }
-.tooltip a{
+
+.tooltip a {
   height: 20px;
 }
+
 .menu-item .tooltip {
   display: none;
   position: absolute;
@@ -78,28 +88,31 @@ nav {
 }
 
 .menu-item:hover .tooltip {
- display: flex;
+  display: flex;
   align-items: baseline;
   justify-content: left;
   flex-direction: column;
 }
+
 .hero {
   position: relative;
-  height: 800px;
+  height: 600px;
 
 }
+
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .hero h1 {
   position: absolute;
   bottom: 1%;
   left: 800px;
   color: white;
   font-size: 60px;
-  filter: opacity(0,5);
+  filter: opacity(0, 5);
   filter: blur(0.5);
   padding: 0.5rem 1rem;
 }
@@ -133,6 +146,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .card img {
   width: 100%;
   height: 70%;
@@ -143,7 +157,7 @@ nav {
   flex: 1;
   background: rgb(240, 247, 252);
   border-radius: 8px;
-  height: fit-content;  
+  height: fit-content;
   position: sticky;
   top: 90px;
   right: 1rem;
@@ -155,10 +169,12 @@ nav {
   flex-direction: column;
   gap: 0.3rem;
 }
-.config{
+
+.config {
   width: 100%;
   height: 80%;
 }
+
 .planejador button {
   background: #4f59f1;
   color: white;
@@ -167,6 +183,7 @@ nav {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .planejador button:hover {
   background-color: white;
   color: #5C75FF;
@@ -179,36 +196,48 @@ nav {
   0% {
     box-shadow: 0 0 0.1px #5C75FF;
   }
+
   50% {
     box-shadow: 0 0 0.1px #5C75FF, 0 0 0.1px #475BCB;
   }
+
   100% {
     box-shadow: 0 0 0.1px #5C75FF;
   }
 }
-
+.pfv{
+  height: 680px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .chamada {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 40vh;
+  height: 400px;
 }
 
 .chamada img {
-  width: 100% ;
-  height:40vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
+  left: 0;
   filter: blur(3px);
+  gap: 5%;
 }
-.texto{
+
+.texto {
   position: absolute;
   z-index: 2;
   left: 100px;
   color: white;
 }
-.texto a{
+
+.texto a {
   padding: 5px 30px;
   font-style: none;
   text-decoration: none;
@@ -217,24 +246,29 @@ nav {
   color: white;
   font-size: 13px;
 }
-.texto a:hover{
- background-color: white;
+
+.texto a:hover {
+  background-color: white;
   color: #5C75FF;
   border: 1px solid #5C75FF;
   border-radius: 10px;
   animation: glow 3s infinite ease-in-out;
 }
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px #5C75FF;
   }
+
   50% {
     box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
   }
+
   100% {
     box-shadow: 0 0 5px #5C75FF;
   }
 }
+
 .chamada .texto {
   max-width: 45%;
 }
@@ -250,6 +284,7 @@ nav {
   border: none;
   border-radius: 10px;
 }
+
 .chamada button:hover {
   background-color: white;
   color: #5C75FF;
@@ -262,16 +297,20 @@ nav {
   0% {
     box-shadow: 0 0 5px #5C75FF;
   }
+
   50% {
     box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
   }
+
   100% {
     box-shadow: 0 0 5px #5C75FF;
   }
 }
-.chamada button:not(:hover){
+
+.chamada button:not(:hover) {
   transition: 1s;
 }
+
 .faq {
   padding: 2rem;
   background: #f4f4f4;
@@ -304,15 +343,17 @@ footer {
   z-index: 100;
   white-space: normal;
 }
-.X a{
-font-style: none;
-text-decoration: none;
-color: white;
-font-size: 15px;
+
+.X a {
+  font-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 
 }
-.X a:hover{
- background-color: white;
+
+.X a:hover {
+  background-color: white;
   color: #5C75FF;
   border: 1px solid #5C75FF;
   border-radius: 10px;
@@ -323,54 +364,88 @@ font-size: 15px;
   0% {
     box-shadow: 0 0 5px #5C75FF;
   }
+
   50% {
     box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
   }
+
   100% {
     box-shadow: 0 0 5px #5C75FF;
   }
 }
-.X a:not(:hover){
+
+.X a:not(:hover) {
   transition: 1s;
 }
-form a{
+
+form a {
   width: 80%;
   height: 30px;
-  background-color:#5C75FF;
+  background-color: #5C75FF;
   font-style: NONE;
   text-decoration: none;
   color: white;
   text-align: center;
   border-radius: 10px;
 }
-form a:hover{
- background-color: white;
+
+form a:hover {
+  background-color: white;
   color: #5C75FF;
   border: 1px solid #5C75FF;
   border-radius: 10px;
   animation: glow 3s infinite ease-in-out;
 }
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px #5C75FF;
   }
+
   50% {
     box-shadow: 0 0 20px #5C75FF, 0 0 30px #475BCB;
   }
+
   100% {
     box-shadow: 0 0 5px #5C75FF;
   }
 }
-form a:not(:hover){
+
+form a:not(:hover) {
   transition: 1s;
 }
+
+/* Ajustar hero section */
+.hero {
+  margin-top: 60px;
+}
+
+/* Melhorar grid */
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
+.pfv{
+  height: 500px;
+}
+.card{
+  height: 400px;
+}
+.chamada img{
+  height: 390px;
+}
+.chamada{
+  font-size: 13px;
+}
   /* HEADER */
-  .config a{
-  text-decoration: none;
-  font-style: none;
-  color: white;
+  .config a {
+    text-decoration: none;
+    font-style: none;
+    color: white;
   }
+
   header{
     padding: 1rem 0;
     width: 100%;
@@ -378,25 +453,25 @@ form a:not(:hover){
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    position: fixed;
-    top: 0;
-    height: 60px;
-  }
-  nav a{
-    font-size: 11px;
-    border-bottom: solid white 1px;
+    height: 63px;
   }
   nav{
-    position: absolute;
     left: 400px;
   }
-   .logo{
-   width: 200px;
-   position: absolute;
-   left: 15px;
+  nav a{
+    font-size: 10px;
+        border-bottom: white solid 1px;
   }
+  .logo{
+   width: 200px;
+   font-size: 20px;
+   margin-left: 8px;
+  }
+  .logo a {
+    font-size: 20px;
+  } 
 
- /* 
+  /* 
   header {
     flex-direction: column;
     padding: 1rem;
@@ -510,25 +585,25 @@ HEADER */
   /* FAQ */
   .faq {
     height: 230px;
-  padding: 1rem;
-  display: block;
-  position: static;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5%;
-}
+    padding: 1rem;
+    display: block;
+    position: static;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+  }
 
   /* FOOTER */
   footer {
     font-size: 0.8rem;
     padding: 0.8rem;
     position: absolute;
-    z-index: 4  ;
+    z-index: 4;
     width: 100%;
-    bottom: -3990px;
+ 
   }
 
   /* INPUTS */
@@ -543,11 +618,17 @@ HEADER */
   }
 
 
-  
-.menu-item:hover .tooltip {
- display: flex;
-  align-items: baseline;
-  justify-content: left;
-  flex-direction: column;
-}
+
+  .menu-item:hover .tooltip {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .tooltip {
+    position: static;
+    display: block;
+    box-shadow: none;
+  }
 }

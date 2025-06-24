@@ -86,7 +86,7 @@ a{
   display: flex;
   justify-content: center;
   padding: 2.5rem;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .caixa-confirmacao {
   background: white;
@@ -166,7 +166,7 @@ button a{
   color: white;
 }
 .voltar {
-  position: sticky;
+  position: static;
   bottom: 20px;
    border-radius: 10px;
   padding: 0.3rem 0.9rem;
@@ -200,4 +200,33 @@ button a{
    position: absolute;
    left: 15px;
   }
+}
+/* Melhorar visual */
+.caixa-confirmacao {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.icone-sucesso {
+  font-size: 60px;
+  color: #51cf66;
+  margin-bottom: 20px;
+}
+.form-reenvio a{
+  position: static;
+}
+.form-reenvio button {
+  background: #4f59f1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: static;
 }
